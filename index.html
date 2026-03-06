@@ -1,24 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My First Website</title>
-<style>
-body {
-background-color: #f0f0f0;
-font-family: Arial, sans-serif;
-text-align: center;
-padding: 50px;
-}
-h1 {
-color: green;
-}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trevor | Developer Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-<h1>Welcome to My Website!</h1>
-<p>This is my first paragraph inside the body.</p>
-<a href="https://example.com">Visit Example</a>
+
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="nav-logo">Trevor Parsons</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- About Me -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title"><span class="section-number">01.</span> About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            Hi! I'm Trevor, a software engineer based in Florida and Virginia.
+            I graduated from Virgnia Tech in 2019 with a degree in Computer Engineering and 
+            I have 6 years of experience building functional, efficient, and visually appealing
+            full stack applications using too many technologies to list right here.
+          </p>
+          <p>
+            Outside of work, I love to sing, travel, stay active, and play video games.
+            I always enjoy meeting new people, having new experiences, 
+            and learning new things — it keeps life interesting!
+          </p>
+          <p>
+            I was laid off last summer due to contract changes, and I took the rest of the year off to do some personal development and travel to some really cool places. 
+            This job market is obviously rough to say the least, but I'm excited to get back into the workforce and apply my skills to new challenges!
+          </p>
+        </div>
+        <div class="about-image">
+          <img src="assets/trevorphoto.jpg" alt="Trevor Parsons" class="about-photo" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume -->
+  <section id="resume" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title"><span class="section-number">02.</span> Resume</h2>
+      <p class="section-intro">A summary of my qualifications. I apologize if some of the details are a bit vague, 
+        that's intentional due to the sensitive nature of the projects I've worked on in the defense sector. 
+        I'd be happy to paint a clearer picture of my experience in a conversation.</p>
+
+      <div class="resume-grid">
+        <!-- Experience -->
+        <div class="resume-column">
+          <h3 class="resume-category">Experience</h3>
+
+          <div class="resume-item">
+            <h4 class="resume-role">Senior Software Engineer</h4>
+            <p class="resume-company">Red Gate Group &mdash; <span>Mar 2023 &ndash; Jul 2025</span></p>
+            <p class="resume-desc">- Contributed to the development and ongoing support of several Vue and Angular apps, each customized to streamline specific analyst workflows in the counter-WMD space <br>
+              - Led full-cycle design efforts, from gathering user requirements to collaborating across teams and delivering intuitive and impactful features <br>
+              - Conducted customer-facing demos of new features, highlighting key benefits and gathering feedback to inform future enhancements
+            </p>
+          </div>
+
+          <div class="resume-item">
+            <h4 class="resume-role">Full Stack Engineer Specialist</h4>
+            <p class="resume-company">Accenture Federal Services &mdash; <span>Jan 2022 &ndash; Mar 2023</span></p>
+            <p class="resume-desc">- Led sprint planning and task coordination for a small Agile development team <br>
+              - Spearheaded a full redesign and performance optimization of an existing React application’s UI and workflow, boosting user engagement and significantly reducing app abandonment <br>
+              - Authored comprehensive documentation for both current and legacy systems to support onboarding and cross-team knowledge sharing
+            </p>
+          </div>
+
+          <div class="resume-item">
+            <h4 class="resume-role">Full Stack Developer</h4>
+            <p class="resume-company">Accenture Federal Services &mdash; <span>Nov 2020 &ndash; Jan 2022</span></p>
+            <p class="resume-desc">- Built and enhanced full stack React applications hosted on AWS and integrated with several APIs and data sources <br>
+              - Resolved long-standing bugs and refactored legacy code to eliminate redundancies, improving maintainability and performance <br>
+              - Integrated Matomo analytics to enable data-driven improvements to product features
+            </p>
+          </div>
+
+          <div class="resume-item">
+            <h4 class="resume-role">Software Engineer</h4>
+            <p class="resume-company">Entegra Systems &mdash; <span>Jul 2019 &ndash; Oct 2020</span></p>
+            <p class="resume-desc">- Developed interactive plugins using a C# SDK for a Unity-based virtual reality planning environment, communicating with customers and end-users to rapidly implement feature requests <br>
+              - Integrated with various public and customer-specific APIs and datasets
+            </p>
+          </div>
+        </div>
+
+        <!-- Education -->
+        <div class="resume-column">
+          <h3 class="resume-category">Education</h3>
+
+          <div class="resume-item">
+            <h4 class="resume-role">B.S. Computer Engineering</h4>
+            <p class="resume-company">Virginia Tech &mdash; <span>2015 &ndash; 2019</span></p>
+            <p class="resume-desc">Served as a Resident Advisor from 2016 to 2018.</p>
+          </div>
+
+          <h3 class="resume-category">Skills</h3>
+
+          <div class="resume-item">
+            <p class="resume-desc">Amazon Web Services, Netlify, Firebase, Docker, React, Vue, Angular, Node.js, .NET, JavaScript/TypeScript, Python, Swift, C/C++/C#, HTML, CSS, SQL and NoSQL Databases, Strapi, REST APIs, Fast API, Leaflet, Git/GitLab, CI/CD, Matomo, Kafka, UI Design, E2E and Unit Testing, WCAG Compliance, Agile Methodology</p>
+          </div>
+
+          <h3 class="resume-category">Security Clearance</h3>
+
+          <div class="resume-item">
+            <h4 class="resume-role">Active Top Secret/SCI with Polygraph</h4>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="resume-download">
+        <a href="assets/trevor-parsons-resume.pdf" target="_blank" rel="noopener noreferrer" class="btn">View PDF Resume</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title"><span class="section-number">03.</span> Projects</h2>
+      <p class="section-intro">Here are some things I've built recently to keep my skills sharp. 
+        Each project presented its own unique challenges and taught me something new.
+        This section is still under development — more projects coming soon!
+      </p>
+      <div class="projects-grid">
+
+        <a href="https://trevor-p-cocktail-bar.netlify.app/" class="project-card" target="_blank" rel="noopener noreferrer">
+          <div class="project-screenshot">
+            <img src="assets/cocktail-bar-screenshot.jpeg" alt="Cocktail Bar screenshot" />
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Cocktail Bar</h3>
+            <p class="project-desc">
+              Explore cocktail recipes and find out which ones you can make with the ingredients you have at home.
+              If you don't see your favorite cocktail, you can add it to the database!
+            </p>
+            <ul class="project-tech">
+              <li>React</li>
+              <li>Typescript</li>
+              <li>Material UI</li>
+              <li>Supabase</li>
+              <li>PostgreSQL</li>
+              <li>Netlify</li>
+            </ul>
+          </div>
+        </a>
+
+        <a href="#" class="project-card">
+          <div class="project-screenshot">
+            <div class="screenshot-placeholder">Screenshot</div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Project Two</h3>
+            <p class="project-desc">
+
+            </p>
+            <ul class="project-tech">
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+        </a>
+
+        <a href="#" class="project-card">
+          <div class="project-screenshot">
+            <div class="screenshot-placeholder">Screenshot</div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Project Three</h3>
+            <p class="project-desc">
+
+            </p>
+            <ul class="project-tech">
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title"><span class="section-number">04.</span> Contact</h2>
+      <p class="contact-intro">
+        If you found this page, you're probably a recruiter or a hiring manager from LinkedIn or a company I applied to.
+        In that case, hello! I'm actively looking for new opportunities. If not, I would still love to connect!
+        Feel free to send me a message below, or email me directly at <a href="mailto:trevorparsons1997@gmail.com">trevorparsons1997@gmail.com</a>.
+      </p>
+
+      <div class="container-narrow">
+        <form class="contact-form" action="https://formspree.io/f/mvzwoobg" method="POST">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="What's this about?" />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" placeholder="Your message..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-full">Send Message</button>
+      </form>
+
+      <div class="social-links">
+        <a href="#" class="social-link">GitHub</a>
+        <a href="https://www.linkedin.com/in/trevor-parsons-356717244/" target="_blank" rel="noopener noreferrer" class="social-link">LinkedIn</a>
+      </div>
+      </div><!-- end container-narrow -->
+    </div><!-- end container -->
+  </section>
+
 </body>
 </html>
